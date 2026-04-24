@@ -507,18 +507,38 @@
     .pricing-card-wrapper {
       display: flex;
       justify-content: center;
+      align-items: stretch;
+      gap: 20px;
     }
 
     .pricing-card {
       background: white;
       border: 2px solid var(--blue);
-      border-radius: 20px;
-      padding: 48px;
-      max-width: 480px;
-      width: 100%;
+      border-radius: 16px;
+      padding: 32px 24px;
+      flex: 1;
+      max-width: 300px;
+      min-width: 0;
       text-align: center;
       position: relative;
       box-shadow: 0 8px 40px rgba(37, 99, 235, .15);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-card.featured {
+      transform: scale(1.04);
+      box-shadow: 0 16px 56px rgba(37, 99, 235, .28);
+      border-color: var(--blue);
+      z-index: 1;
+    }
+
+    .pricing-price-custom {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 4px;
     }
 
     .pricing-badge {
@@ -538,14 +558,14 @@
     }
 
     .pricing-name {
-      font-size: 20px;
+      font-size: 17px;
       font-weight: 700;
       color: var(--navy);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .pricing-price {
-      font-size: 64px;
+      font-size: 48px;
       font-weight: 800;
       color: var(--navy);
       line-height: 1;
@@ -553,32 +573,33 @@
     }
 
     .pricing-price sup {
-      font-size: 28px;
+      font-size: 22px;
       vertical-align: top;
-      margin-top: 14px;
+      margin-top: 10px;
       display: inline-block;
     }
 
     .pricing-period {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--gray-400);
-      margin-bottom: 32px;
+      margin-bottom: 24px;
     }
 
     .pricing-features {
       list-style: none;
       text-align: left;
-      margin-bottom: 36px;
+      margin-bottom: 24px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 10px;
+      flex: 1;
     }
 
     .pricing-features li {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: 15px;
+      gap: 8px;
+      font-size: 13px;
       color: var(--gray-800);
     }
 
@@ -656,6 +677,22 @@
     }
 
     /* ─── RESPONSIVE ─── */
+    @media (max-width: 780px) {
+      .pricing-card-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pricing-card {
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .pricing-card.featured {
+        transform: none;
+      }
+    }
+
     @media (max-width: 640px) {
       .nav-links {
         display: none;
@@ -876,16 +913,37 @@
     <div class="section-inner">
       <div class="section-header">
         <span class="section-tag">Tarifs</span>
-        <h2>Un prix simple, sans surprise</h2>
-        <p class="section-desc">Accès illimité à toutes les fonctionnalités. Pas de frais cachés.</p>
+        <h2>La formule adaptée à votre activité</h2>
+        <p class="section-desc">Des tarifs transparents selon votre taille. Pas de frais cachés.</p>
       </div>
       <div class="pricing-card-wrapper">
+
+        <!-- Plan Essentiel -->
         <div class="pricing-card">
-          <div class="pricing-badge">Tout inclus</div>
-          <div class="pricing-name">Plan Tout Inclus</div>
+          <div class="pricing-name">Plan Essentiel</div>
           <div class="pricing-price"><sup>€</sup>25</div>
           <div class="pricing-period">par mois · sans engagement</div>
           <ul class="pricing-features">
+            <li><span class="check">✓</span> Jusqu'à 3 établissements</li>
+            <li><span class="check">✓</span> Réponses automatiques sans intervention</li>
+            <li><span class="check">✓</span> Gestion intelligente des avis négatifs</li>
+            <li><span class="check">✓</span> Alertes ciblées quand vous êtes nécessaire</li>
+            <li><span class="check">✓</span> Publication directe sur Google Maps 24h/24</li>
+            <li><span class="check">✓</span> Réponses en +12 langues</li>
+            <li><span class="check">✓</span> Tableau de bord & suivi de réputation</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-large" style="width:100%">Je suis intéressé(e) →</a>
+          <p class="pricing-note">Sans engagement · Résiliation à tout moment</p>
+        </div>
+
+        <!-- Plan Pro -->
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Le plus populaire</div>
+          <div class="pricing-name">Plan Pro</div>
+          <div class="pricing-price"><sup>€</sup>50</div>
+          <div class="pricing-period">par mois · sans engagement</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Jusqu'à 10 établissements</li>
             <li><span class="check">✓</span> Réponses automatiques sans intervention</li>
             <li><span class="check">✓</span> Gestion intelligente des avis négatifs</li>
             <li><span class="check">✓</span> Alertes ciblées quand vous êtes nécessaire</li>
@@ -893,10 +951,28 @@
             <li><span class="check">✓</span> Réponses en +12 langues</li>
             <li><span class="check">✓</span> Tableau de bord & suivi de réputation</li>
             <li><span class="check">✓</span> Support prioritaire</li>
+            <li><span class="check">✓</span> Onboarding dédié inclus</li>
           </ul>
           <a href="contact.html" class="btn btn-primary btn-large" style="width:100%">Je suis intéressé(e) →</a>
           <p class="pricing-note">Sans engagement · Résiliation à tout moment</p>
         </div>
+
+        <!-- Plan Entreprise -->
+        <div class="pricing-card">
+          <div class="pricing-name">Plan Entreprise</div>
+          <div class="pricing-price-custom">Prix sur mesure</div>
+          <div class="pricing-period">Adapté à votre volume</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> 10+ établissements</li>
+            <li><span class="check">✓</span> Toutes les fonctionnalités Pro</li>
+            <li><span class="check">✓</span> Gestionnaire de compte dédié</li>
+            <li><span class="check">✓</span> SLA et support premium</li>
+            <li><span class="check">✓</span> Intégration personnalisée</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-large" style="width:100%">Je suis intéressé(e) →</a>
+          <p class="pricing-note">Tarif personnalisé · Sur devis</p>
+        </div>
+
       </div>
     </div>
   </section>
