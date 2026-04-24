@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VGKEN1DDC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1VGKEN1DDC');
+  </script>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --navy: #1B2A4A;
@@ -28,7 +45,9 @@
       --red: #EF4444;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -42,7 +61,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255,255,255,0.95);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--gray-200);
     }
@@ -74,7 +93,11 @@
       justify-content: center;
     }
 
-    .logo-icon svg { width: 20px; height: 20px; fill: white; }
+    .logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
 
     .logo-text {
       font-size: 18px;
@@ -82,7 +105,9 @@
       color: var(--navy);
     }
 
-    .logo-text span { color: var(--blue); }
+    .logo-text span {
+      color: var(--blue);
+    }
 
     .nav-links {
       display: flex;
@@ -99,7 +124,9 @@
       transition: color .2s;
     }
 
-    .nav-links a:hover { color: var(--navy); }
+    .nav-links a:hover {
+      color: var(--navy);
+    }
 
     .btn {
       display: inline-flex;
@@ -124,7 +151,7 @@
     .btn-primary:hover {
       background: #1d4ed8;
       transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(37,99,235,.35);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, .35);
     }
 
     .btn-outline {
@@ -163,7 +190,7 @@
       font-weight: 500;
       color: var(--blue);
       margin-bottom: 28px;
-      box-shadow: 0 1px 4px rgba(0,0,0,.06);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .06);
     }
 
     .hero-badge .dot {
@@ -183,7 +210,9 @@
       letter-spacing: -1px;
     }
 
-    h1 .highlight { color: var(--blue); }
+    h1 .highlight {
+      color: var(--blue);
+    }
 
     .hero-sub {
       font-size: clamp(16px, 2vw, 19px);
@@ -228,7 +257,9 @@
       margin-bottom: 6px;
     }
 
-    .stat-value span { color: #60a5fa; }
+    .stat-value span {
+      color: #60a5fa;
+    }
 
     .stat-label {
       font-size: 14px;
@@ -237,8 +268,13 @@
     }
 
     /* ─── SECTION WRAPPER ─── */
-    .section { padding: 96px 24px; }
-    .section-alt { background: var(--gray-50); }
+    .section {
+      padding: 96px 24px;
+    }
+
+    .section-alt {
+      background: var(--gray-50);
+    }
 
     .section-inner {
       max-width: 1120px;
@@ -295,7 +331,7 @@
     }
 
     .feature-card:hover {
-      box-shadow: 0 8px 32px rgba(0,0,0,.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .08);
       transform: translateY(-3px);
     }
 
@@ -310,10 +346,21 @@
       font-size: 22px;
     }
 
-    .icon-blue { background: var(--blue-pale); }
-    .icon-red { background: #FEF2F2; }
-    .icon-yellow { background: #FFFBEB; }
-    .icon-orange { background: #FFF7ED; }
+    .icon-blue {
+      background: var(--blue-pale);
+    }
+
+    .icon-red {
+      background: #FEF2F2;
+    }
+
+    .icon-yellow {
+      background: #FFFBEB;
+    }
+
+    .icon-orange {
+      background: #FFF7ED;
+    }
 
     .feature-card h3 {
       font-size: 17px;
@@ -433,9 +480,17 @@
       flex-shrink: 0;
     }
 
-    .av-blue { background: var(--blue); }
-    .av-navy { background: var(--navy); }
-    .av-green { background: var(--green); }
+    .av-blue {
+      background: var(--blue);
+    }
+
+    .av-navy {
+      background: var(--navy);
+    }
+
+    .av-green {
+      background: var(--green);
+    }
 
     .testi-name {
       font-size: 14px;
@@ -463,7 +518,7 @@
       width: 100%;
       text-align: center;
       position: relative;
-      box-shadow: 0 8px 40px rgba(37,99,235,.15);
+      box-shadow: 0 8px 40px rgba(37, 99, 235, .15);
     }
 
     .pricing-badge {
@@ -554,8 +609,16 @@
       text-align: center;
     }
 
-    .cta-banner h2 { color: white; margin-bottom: 12px; }
-    .cta-banner p { color: #93C5FD; font-size: 17px; margin-bottom: 36px; }
+    .cta-banner h2 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .cta-banner p {
+      color: #93C5FD;
+      font-size: 17px;
+      margin-bottom: 36px;
+    }
 
     /* ─── FOOTER ─── */
     footer {
@@ -588,252 +651,279 @@
       color: white;
     }
 
-    .footer-logo-text span { color: var(--blue-light); }
+    .footer-logo-text span {
+      color: var(--blue-light);
+    }
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 640px) {
-      .nav-links { display: none; }
-      .step:not(:last-child)::after { display: none; }
-      .pricing-card { padding: 36px 24px; }
+      .nav-links {
+        display: none;
+      }
+
+      .step:not(:last-child)::after {
+        display: none;
+      }
+
+      .pricing-card {
+        padding: 36px 24px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="logo">
-      <div class="logo-icon">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
-        </svg>
-      </div>
-      <span class="logo-text">Reply<span>Helper</span></span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#fonctionnalites">Fonctionnalités</a></li>
-      <li><a href="#comment">Comment ça marche</a></li>
-      <li><a href="#temoignages">Témoignages</a></li>
-      <li><a href="#tarifs">Tarifs</a></li>
-    </ul>
-    <a href="contact.html" class="btn btn-primary">Être contacté</a>
-  </div>
-</nav>
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+          </svg>
+        </div>
+        <span class="logo-text">Reply<span>Helper</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+        <li><a href="#comment">Comment ça marche</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary">Être contacté</a>
+    </div>
+  </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-badge">
-    <span class="dot"></span>
-    Propulsé par l'intelligence artificielle
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Propulsé par l'intelligence artificielle
+    </div>
+    <h1>Vos avis Google gérés<br><span class="highlight">automatiquement par l'IA</span></h1>
+    <p class="hero-sub">
+      ReplyHelper répond à chaque avis Google à votre place, 24h/24, de façon personnalisée,
+      avec une gestion intelligente des avis négatifs pour protéger votre réputation.
+    </p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn btn-primary btn-large">Je suis intéressé(e) →</a>
+      <a href="#comment" class="btn btn-outline btn-large">Voir comment ça marche</a>
+    </div>
+    <p class="hero-note">Sans engagement · On vous recontacte rapidement</p>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">+<span>0,4</span> ★</div>
+        <div class="stat-label">gagnés sur la note moyenne</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">-<span>30</span>%</div>
+        <div class="stat-label">d'avis négatifs visibles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">+<span>15</span>%</div>
+        <div class="stat-label">de clients fidélisés</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value"><span>100</span>%</div>
+        <div class="stat-label">des avis reçoivent une réponse</div>
+      </div>
+    </div>
   </div>
-  <h1>Vos avis Google gérés<br><span class="highlight">automatiquement par l'IA</span></h1>
-  <p class="hero-sub">
-    ReplyHelper répond à chaque avis Google à votre place, 24h/24, de façon personnalisée,
-    avec une gestion intelligente des avis négatifs pour protéger votre réputation.
-  </p>
-  <div class="hero-actions">
+
+  <!-- FEATURES -->
+  <section class="section" id="fonctionnalites">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Fonctionnalités</span>
+        <h2>Tout ce qu'il faut pour soigner<br>votre réputation en ligne</h2>
+        <p class="section-desc">ReplyHelper travaille en arrière-plan pendant que vous vous concentrez sur votre
+          activité.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon icon-blue">⚡</div>
+          <h3>Réponses automatiques personnalisées</h3>
+          <p>Dès qu'un client laisse un avis, ReplyHelper génère et publie une réponse adaptée au contenu, au ton et à
+            votre activité, sans intervention de votre part.</p>
+          <div class="feature-stat">100% des avis traités automatiquement</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon icon-red">🛡️</div>
+          <h3>Gestion intelligente des avis négatifs</h3>
+          <p>Les avis négatifs ne sont pas ignorés : ReplyHelper rédige une réponse apaisante et professionnelle pour
+            limiter leur impact et montrer que vous prenez les retours au sérieux.</p>
+          <div class="feature-stat">Jusqu'à -30% d'avis négatifs visibles</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon icon-yellow">🔔</div>
+          <h3>Alerte quand vous êtes vraiment nécessaire</h3>
+          <p>Certains cas méritent une touche humaine. ReplyHelper détecte les situations sensibles et vous notifie
+            uniquement lorsqu'une intervention de votre part est indispensable.</p>
+          <div class="feature-stat">Zéro distraction inutile</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon icon-orange">📊</div>
+          <h3>Tableau de bord & suivi de réputation</h3>
+          <p>Consultez l'historique des réponses publiées, l'évolution de votre note et les tendances des avis reçus
+            depuis un espace centralisé et clair.</p>
+          <div class="feature-stat">Vue complète de votre réputation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt" id="comment">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Comment ça marche</span>
+        <h2>Configurez une fois,<br>l'IA s'occupe du reste</h2>
+        <p class="section-desc">Opérationnel en moins de 3 minutes. ReplyHelper tourne en arrière-plan 24h/24 sans que
+          vous ayez à intervenir.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Connectez votre fiche Google</h3>
+          <p>Liez votre profil Google Business à ReplyHelper en un clic via votre compte Google.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Définissez votre ton</h3>
+          <p>Choisissez le style de vos réponses (chaleureux, professionnel…) et quelques infos sur votre établissement.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>L'IA répond automatiquement</h3>
+          <p>À chaque nouvel avis, ReplyHelper génère et publie une réponse sur Google Maps. Aucune action requise de
+            votre côté.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Suivez vos résultats</h3>
+          <p>Consultez les réponses publiées et l'évolution de votre note depuis votre tableau de bord, quand vous le
+            souhaitez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="temoignages">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Témoignages</span>
+        <h2>Ils ont transformé leur<br>réputation en ligne</h2>
+        <p class="section-desc">Des professionnels témoignent de l'impact de ReplyHelper sur leur activité.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">
+            "Avant ReplyHelper, j'avais des avis sans réponse qui traînaient depuis des semaines. Maintenant c'est l'IA
+            qui répond automatiquement à ma place, même la nuit. Ma note est passée de 4,2 à 4,7 en trois mois."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar av-blue">SL</div>
+            <div>
+              <div class="testi-name">Sophie L.</div>
+              <div class="testi-role">Gérante d'un commerce, Lyon</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">
+            "Je gère 3 établissements et je n'avais pas le temps de répondre à tous les avis. Ce qui m'a convaincu,
+            c'est la gestion des avis négatifs : les réponses sont apaisantes, professionnelles, et ça se ressent sur
+            l'image."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar av-navy">KM</div>
+            <div>
+              <div class="testi-name">Karim M.</div>
+              <div class="testi-role">Dirigeant de 3 établissements, Paris</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">
+            "J'adorais l'idée de l'automatisation mais je craignais de perdre le côté humain. Le système d'alerte me
+            notifie uniquement quand j'ai vraiment besoin d'intervenir : c'est l'équilibre parfait."
+          </p>
+          <div class="testi-author">
+            <div class="testi-avatar av-green">CD</div>
+            <div>
+              <div class="testi-name">Claire D.</div>
+              <div class="testi-role">Propriétaire d'un commerce, Nice</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section-alt" id="tarifs">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">Tarifs</span>
+        <h2>Un prix simple, sans surprise</h2>
+        <p class="section-desc">Accès illimité à toutes les fonctionnalités. Pas de frais cachés.</p>
+      </div>
+      <div class="pricing-card-wrapper">
+        <div class="pricing-card">
+          <div class="pricing-badge">Tout inclus</div>
+          <div class="pricing-name">Plan Tout Inclus</div>
+          <div class="pricing-price"><sup>€</sup>25</div>
+          <div class="pricing-period">par mois · sans engagement</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Réponses automatiques sans intervention</li>
+            <li><span class="check">✓</span> Gestion intelligente des avis négatifs</li>
+            <li><span class="check">✓</span> Alertes ciblées quand vous êtes nécessaire</li>
+            <li><span class="check">✓</span> Publication directe sur Google Maps 24h/24</li>
+            <li><span class="check">✓</span> Réponses en +12 langues</li>
+            <li><span class="check">✓</span> Tableau de bord & suivi de réputation</li>
+            <li><span class="check">✓</span> Support prioritaire</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-large" style="width:100%">Je suis intéressé(e) →</a>
+          <p class="pricing-note">Sans engagement · Résiliation à tout moment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <h2>Votre réputation gérée<br>automatiquement, dès aujourd'hui</h2>
+    <p>Plus aucun avis sans réponse. ReplyHelper s'en charge pour vous, 24h/24, 7j/7.</p>
     <a href="contact.html" class="btn btn-primary btn-large">Je suis intéressé(e) →</a>
-    <a href="#comment" class="btn btn-outline btn-large">Voir comment ça marche</a>
-  </div>
-  <p class="hero-note">Sans engagement · On vous recontacte rapidement</p>
-</section>
+  </section>
 
-<!-- STATS STRIP -->
-<div class="stats-strip">
-  <div class="stats-grid">
-    <div class="stat-item">
-      <div class="stat-value">+<span>0,4</span> ★</div>
-      <div class="stat-label">gagnés sur la note moyenne</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">-<span>30</span>%</div>
-      <div class="stat-label">d'avis négatifs visibles</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value">+<span>15</span>%</div>
-      <div class="stat-label">de clients fidélisés</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-value"><span>100</span>%</div>
-      <div class="stat-label">des avis reçoivent une réponse</div>
-    </div>
-  </div>
-</div>
-
-<!-- FEATURES -->
-<section class="section" id="fonctionnalites">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Fonctionnalités</span>
-      <h2>Tout ce qu'il faut pour soigner<br>votre réputation en ligne</h2>
-      <p class="section-desc">ReplyHelper travaille en arrière-plan pendant que vous vous concentrez sur votre activité.</p>
-    </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon icon-blue">⚡</div>
-        <h3>Réponses automatiques personnalisées</h3>
-        <p>Dès qu'un client laisse un avis, ReplyHelper génère et publie une réponse adaptée au contenu, au ton et à votre activité, sans intervention de votre part.</p>
-        <div class="feature-stat">100% des avis traités automatiquement</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-red">🛡️</div>
-        <h3>Gestion intelligente des avis négatifs</h3>
-        <p>Les avis négatifs ne sont pas ignorés : ReplyHelper rédige une réponse apaisante et professionnelle pour limiter leur impact et montrer que vous prenez les retours au sérieux.</p>
-        <div class="feature-stat">Jusqu'à -30% d'avis négatifs visibles</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-yellow">🔔</div>
-        <h3>Alerte quand vous êtes vraiment nécessaire</h3>
-        <p>Certains cas méritent une touche humaine. ReplyHelper détecte les situations sensibles et vous notifie uniquement lorsqu'une intervention de votre part est indispensable.</p>
-        <div class="feature-stat">Zéro distraction inutile</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon icon-orange">📊</div>
-        <h3>Tableau de bord & suivi de réputation</h3>
-        <p>Consultez l'historique des réponses publiées, l'évolution de votre note et les tendances des avis reçus depuis un espace centralisé et clair.</p>
-        <div class="feature-stat">Vue complète de votre réputation</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="section section-alt" id="comment">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Comment ça marche</span>
-      <h2>Configurez une fois,<br>l'IA s'occupe du reste</h2>
-      <p class="section-desc">Opérationnel en moins de 3 minutes. ReplyHelper tourne en arrière-plan 24h/24 sans que vous ayez à intervenir.</p>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-number">1</div>
-        <h3>Connectez votre fiche Google</h3>
-        <p>Liez votre profil Google Business à ReplyHelper en un clic via votre compte Google.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">2</div>
-        <h3>Définissez votre ton</h3>
-        <p>Choisissez le style de vos réponses (chaleureux, professionnel…) et quelques infos sur votre établissement.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">3</div>
-        <h3>L'IA répond automatiquement</h3>
-        <p>À chaque nouvel avis, ReplyHelper génère et publie une réponse sur Google Maps. Aucune action requise de votre côté.</p>
-      </div>
-      <div class="step">
-        <div class="step-number">4</div>
-        <h3>Suivez vos résultats</h3>
-        <p>Consultez les réponses publiées et l'évolution de votre note depuis votre tableau de bord, quand vous le souhaitez.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section" id="temoignages">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Témoignages</span>
-      <h2>Ils ont transformé leur<br>réputation en ligne</h2>
-      <p class="section-desc">Des professionnels témoignent de l'impact de ReplyHelper sur leur activité.</p>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">
-          "Avant ReplyHelper, j'avais des avis sans réponse qui traînaient depuis des semaines. Maintenant c'est l'IA qui répond automatiquement à ma place, même la nuit. Ma note est passée de 4,2 à 4,7 en trois mois."
-        </p>
-        <div class="testi-author">
-          <div class="testi-avatar av-blue">SL</div>
-          <div>
-            <div class="testi-name">Sophie L.</div>
-            <div class="testi-role">Gérante d'un commerce, Lyon</div>
-          </div>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">
+        <div class="logo-icon" style="width:30px;height:30px;border-radius:6px;">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;fill:white;">
+            <path
+              d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+          </svg>
         </div>
-      </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">
-          "Je gère 3 établissements et je n'avais pas le temps de répondre à tous les avis. Ce qui m'a convaincu, c'est la gestion des avis négatifs : les réponses sont apaisantes, professionnelles, et ça se ressent sur l'image."
-        </p>
-        <div class="testi-author">
-          <div class="testi-avatar av-navy">KM</div>
-          <div>
-            <div class="testi-name">Karim M.</div>
-            <div class="testi-role">Dirigeant de 3 établissements, Paris</div>
-          </div>
-        </div>
-      </div>
-      <div class="testi-card">
-        <div class="stars">★★★★★</div>
-        <p class="testi-text">
-          "J'adorais l'idée de l'automatisation mais je craignais de perdre le côté humain. Le système d'alerte me notifie uniquement quand j'ai vraiment besoin d'intervenir : c'est l'équilibre parfait."
-        </p>
-        <div class="testi-author">
-          <div class="testi-avatar av-green">CD</div>
-          <div>
-            <div class="testi-name">Claire D.</div>
-            <div class="testi-role">Propriétaire d'un commerce, Nice</div>
-          </div>
-        </div>
-      </div>
+        <span class="footer-logo-text">Reply<span>Helper</span></span>
+      </a>
+      <span>© 2026 ReplyHelper · Tous droits réservés</span>
     </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="section section-alt" id="tarifs">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Tarifs</span>
-      <h2>Un prix simple, sans surprise</h2>
-      <p class="section-desc">Accès illimité à toutes les fonctionnalités. Pas de frais cachés.</p>
-    </div>
-    <div class="pricing-card-wrapper">
-      <div class="pricing-card">
-        <div class="pricing-badge">Tout inclus</div>
-        <div class="pricing-name">Plan Tout Inclus</div>
-        <div class="pricing-price"><sup>€</sup>25</div>
-        <div class="pricing-period">par mois · sans engagement</div>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Réponses automatiques sans intervention</li>
-          <li><span class="check">✓</span> Gestion intelligente des avis négatifs</li>
-          <li><span class="check">✓</span> Alertes ciblées quand vous êtes nécessaire</li>
-          <li><span class="check">✓</span> Publication directe sur Google Maps 24h/24</li>
-          <li><span class="check">✓</span> Réponses en +12 langues</li>
-          <li><span class="check">✓</span> Tableau de bord & suivi de réputation</li>
-          <li><span class="check">✓</span> Support prioritaire</li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary btn-large" style="width:100%">Je suis intéressé(e) →</a>
-        <p class="pricing-note">Sans engagement · Résiliation à tout moment</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA BANNER -->
-<section class="cta-banner">
-  <h2>Votre réputation gérée<br>automatiquement, dès aujourd'hui</h2>
-  <p>Plus aucun avis sans réponse. ReplyHelper s'en charge pour vous, 24h/24, 7j/7.</p>
-  <a href="contact.html" class="btn btn-primary btn-large">Je suis intéressé(e) →</a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <a href="index.html" class="footer-logo">
-      <div class="logo-icon" style="width:30px;height:30px;border-radius:6px;">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width:16px;height:16px;fill:white;">
-          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
-        </svg>
-      </div>
-      <span class="footer-logo-text">Reply<span>Helper</span></span>
-    </a>
-    <span>© 2026 ReplyHelper · Tous droits réservés</span>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>

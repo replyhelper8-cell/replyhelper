@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VGKEN1DDC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1VGKEN1DDC');
+  </script>
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --navy: #1B2A4A;
@@ -33,7 +51,7 @@
 
     /* ─── NAV ─── */
     nav {
-      background: rgba(255,255,255,0.95);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--gray-200);
     }
@@ -65,7 +83,11 @@
       justify-content: center;
     }
 
-    .logo-icon svg { width: 20px; height: 20px; fill: white; }
+    .logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
 
     .logo-text {
       font-size: 18px;
@@ -73,7 +95,9 @@
       color: var(--navy);
     }
 
-    .logo-text span { color: var(--blue); }
+    .logo-text span {
+      color: var(--blue);
+    }
 
     .back-link {
       font-size: 14px;
@@ -86,7 +110,9 @@
       transition: color .2s;
     }
 
-    .back-link:hover { color: var(--navy); }
+    .back-link:hover {
+      color: var(--navy);
+    }
 
     /* ─── MAIN ─── */
     main {
@@ -104,7 +130,7 @@
       max-width: 560px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 8px 40px rgba(0,0,0,.08);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, .08);
     }
 
     .card-icon {
@@ -187,7 +213,7 @@
     .btn-form:hover {
       background: #1d4ed8;
       transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(37,99,235,.35);
+      box-shadow: 0 4px 16px rgba(37, 99, 235, .35);
     }
 
     .note {
@@ -206,55 +232,61 @@
     }
 
     @media (max-width: 600px) {
-      .card { padding: 36px 24px; }
+      .card {
+        padding: 36px 24px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="logo">
-      <div class="logo-icon">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
-        </svg>
-      </div>
-      <span class="logo-text">Reply<span>Helper</span></span>
-    </a>
-    <a href="index.html" class="back-link">← Retour au site</a>
-  </div>
-</nav>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+          </svg>
+        </div>
+        <span class="logo-text">Reply<span>Helper</span></span>
+      </a>
+      <a href="index.html" class="back-link">← Retour au site</a>
+    </div>
+  </nav>
 
-<main>
-  <div class="card">
-    <div class="card-icon">📋</div>
-    <h1>Vous êtes intéressé(e) ?</h1>
-    <p class="subtitle">
-      Remplissez le formulaire ci-dessous et nous vous recontacterons
-      rapidement pour vous en dire plus sur ReplyHelper.
-    </p>
-    <ul class="steps-list">
-      <li>
-        <span class="step-dot">1</span>
-        <span>Remplissez le formulaire avec vos coordonnées et quelques infos sur votre établissement.</span>
-      </li>
-      <li>
-        <span class="step-dot">2</span>
-        <span>Nous vous recontactons sous 24h pour répondre à vos questions et vous expliquer comment ça fonctionne.</span>
-      </li>
-    </ul>
-    <!-- REMPLACEZ le href ci-dessous par votre lien Google Form -->
-    <a href="https://form.typeform.com/to/e65vPaaR" class="btn-form" target="_blank">
-      Remplir le formulaire →
-    </a>
-    <p class="note">Sans engagement · Réponse sous 24h</p>
-  </div>
-</main>
+  <main>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h1>Vous êtes intéressé(e) ?</h1>
+      <p class="subtitle">
+        Remplissez le formulaire ci-dessous et nous vous recontacterons
+        rapidement pour vous en dire plus sur ReplyHelper.
+      </p>
+      <ul class="steps-list">
+        <li>
+          <span class="step-dot">1</span>
+          <span>Remplissez le formulaire avec vos coordonnées et quelques infos sur votre établissement.</span>
+        </li>
+        <li>
+          <span class="step-dot">2</span>
+          <span>Nous vous recontactons sous 24h pour répondre à vos questions et vous expliquer comment ça
+            fonctionne.</span>
+        </li>
+      </ul>
+      <!-- REMPLACEZ le href ci-dessous par votre lien Google Form -->
+      <a href="https://form.typeform.com/to/e65vPaaR" class="btn-form" target="_blank">
+        Remplir le formulaire →
+      </a>
+      <p class="note">Sans engagement · Réponse sous 24h</p>
+    </div>
+  </main>
 
-<footer>
-  © 2026 ReplyHelper · Tous droits réservés
-</footer>
+  <footer>
+    © 2026 ReplyHelper · Tous droits réservés
+  </footer>
 
 </body>
+
 </html>
